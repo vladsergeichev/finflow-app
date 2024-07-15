@@ -4,8 +4,8 @@ from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 from fastapi_users import FastAPIUsers
 
-from auth.database import User
-from auth.auth import auth_backend
+from auth.utils import User
+from auth.base_config import auth_backend
 from auth.manager import get_user_manager
 from auth.schemas import UserRead, UserCreate
 
